@@ -1,0 +1,11 @@
+{% macro renderizar_codigo (field) %}
+<td>{{field.label}}</td>
+<td>{{field(**kwargs)|safe}}</td>
+<br>
+{% endmacro %}
+
+{% macro renderizar_boton (field) %}
+<td>{{field(**kwargs)|safe}}</td>
+<br>
+{% endmacro %}
+

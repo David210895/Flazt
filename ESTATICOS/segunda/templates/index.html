@@ -2,4 +2,13 @@
 {% block title %} {{title}}  {% endblock %}
 {% block content %}
     <p>Uso de archivos estaticos en PYTHON</p>
+    {% from "macro.html" import renderizar_codigo %}
+    {{renderizar_codigo(form.firstname)}}
+    {{renderizar_codigo(form.lastname)}}
+    {{renderizar_codigo(form.number)}}
+    {{renderizar_codigo(form.comment)}}
+    {% from "macro.html" import renderizar_boton %}
+    {{renderizar_codigo(form.button)}}
 {% endblock %}
+
+
